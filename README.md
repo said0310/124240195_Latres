@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+## 📁 Struktur Folder Proyek
+
+```text
 lib/
 ├── main.dart                  # Titik awal aplikasi, Route Guard (cek sesi login)
 ├── theme.dart                 # Styling tema terpusat (Warna, Font, Input, Button)
@@ -10,7 +13,7 @@ lib/
 │   └── episode.dart           # Model Episode
 ├── services/                  # Komunikasi data eksternal & lokal
 │   ├── db_service.dart        # SQLite Database (CRUD Tabel User, SHA-256)
-│   ├── auth_service.dart      # SharedPreferences (Session Sesi Login)
+│   ├── auth_service.dart      # SharedPreferences (Session Login)
 │   └── api_service.dart       # HTTP Client (Panggilan API Rick and Morty)
 ├── stores/                    # State Management aplikasi
 │   └── favorite_store.dart    # ChangeNotifier Singleton (Sinkronisasi Favorit)
@@ -24,4 +27,3 @@ lib/
     ├── detail_screen.dart     # Detail Karakter (SliverAppBar) & Aksi Favorit
     ├── favorite_screen.dart   # Daftar Favorit dengan Dismissible (Swipe to Delete)
     └── episode_screen.dart    # Daftar Episode + Pagination
-    
